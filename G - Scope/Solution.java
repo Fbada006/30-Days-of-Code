@@ -10,10 +10,9 @@ class Difference {
 
     public void computeDifference() {
         int max = 0;
-
-        for (int i = 0; i < elements.length; i++) {
-            for (int j = 0; j < elements.length; j++) {
-                int abs = Math.abs(elements[i] - elements[j]);
+        for (int element : elements) {
+            for (int i : elements) {
+                int abs = Math.abs(element - i);
                 if (abs > max) max = abs;
             }
         }
